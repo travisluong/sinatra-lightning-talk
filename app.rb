@@ -4,7 +4,7 @@ require 'data_mapper'
 
 enable :sessions
 
-DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/sinatra.db")
+DataMapper::setup(:default, ENV["HEROKU_POSTGRESQL_COBALT_URL"] "sqlite3://#{Dir.pwd}/sinatra.db")
 
 class Comment
   include DataMapper::Resource
