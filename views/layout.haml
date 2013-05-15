@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title = Sinatra
+    %link{:rel => "stylesheet", :href => "style.css"}/
+  %body
+    %h1 Sinatra Lightning Talk
+    %nav
+      %a{:href => "/"} Home
+      %a{:href => "/about"} About
+      %a{:href => "/song"} Random Song
+      %a{:href => "/comment"} Comment
+    = yield

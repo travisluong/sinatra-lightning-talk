@@ -1,0 +1,12 @@
+%h2 Leave a comment
+
+%form{:action => "/comment", :method => "post"}
+  %textarea#body{:name => "content", :cols => "30", :rows => "10"}
+  %input{:type => "submit", :value => "Send", :method => "post"}/
+
+%ul
+- @comments.each do |c|
+  %li{:style => "margin:20px; list-style-type:none;"}
+    %div=h c.content
+    %div=h c.created_at
+
