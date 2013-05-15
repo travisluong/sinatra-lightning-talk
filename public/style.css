@@ -1,3 +1,45 @@
+html {
+  background: url(sinatra.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
-  background: #eee;
+  background-color:rgba(0,0,0,0.8);
+  color: #fff;
+  padding: 20px;
+  width: 25%;
+  font-family: Georgia;
+  min-width: 500px;
+}
+
+h1 {
+  font-family: 'Playfair Display SC';
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  background: #333;
+}
+
+nav a:hover {
+  background: #000;
+}
+
+a {
+  color: #fff;
+}
+
+textarea {
+  background: #000;
+  color: #fff;
+}
+
+input[type=submit] {
+  background: #333;
+  color: #fff;
 }

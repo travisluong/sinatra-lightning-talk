@@ -1,8 +1,10 @@
 %h2 Leave a comment
 
 %form{:action => "/comment", :method => "post"}
-  %textarea#body{:name => "content", :cols => "30", :rows => "10"}
-  %input{:type => "submit", :value => "Send", :method => "post"}/
+  %div
+    %textarea{:name => "content", :cols => "30", :rows => "10"}
+  %div
+    %input{:type => "submit", :value => "Submit", :method => "post"}/
 
 %ul
 - @comments.each do |c|

@@ -48,6 +48,6 @@ post '/comment' do
   redirect '/comment'
 end
 
-get '/success' do
-  haml :success
+get '/resources' do
+  haml :resources
 end
